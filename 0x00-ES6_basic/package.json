@@ -2,7 +2,6 @@
     "engines": {
         "node": "12.x"
     },
-    "type": "module",
     "scripts": {
         "lint": "./node_modules/.bin/eslint",
         "check-lint": "lint [0-9]*.js",
@@ -19,5 +18,11 @@
         "eslint-plugin-import": "^2.18.2",
         "eslint-plugin-jest": "^22.17.0",
         "jest": "^24.9.0"
+    },
+    "standard": {
+        "plugins": [
+            "html"
+        ],
+        "parser": "babel-eslint"
     }
 }
