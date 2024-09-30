@@ -4,13 +4,13 @@ module.exports = {
 		es6: true,
 		jest: true,
 	},
-	extends: ['airbnb-base', 'plugin:jest/all'],
+	extends: ['semistandard', 'plugin:jest/all'],
 	globals: {
 		Atomics: 'readonly',
 		SharedArrayBuffer: 'readonly',
 	},
 	parserOptions: {
-		ecmaVersion: 2018,
+		ecmaVersion: 2020,
 		sourceType: 'module',
 	},
 	plugins: ['jest'],
@@ -18,6 +18,10 @@ module.exports = {
 		'no-console': 'off',
 		'no-shadow': 'off',
 		'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
+		semi: ['error', 'always'],
+		indent: ['error', 2],
+		'comma-dangle': ['error', 'never'],
+		'space-before-function-paren': ['error', 'never'],
 	},
 	overrides: [
 		{
