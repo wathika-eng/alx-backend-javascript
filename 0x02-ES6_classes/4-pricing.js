@@ -1,9 +1,14 @@
 // pricing.js
+import { shouldUseFlatConfig } from 'eslint/use-at-your-own-risk';
 import { Currency } from './3-currency.js';
 
 export class Pricing {
   constructor (amount, currency) {
     this._amount = amount;
+    var gcc <command />
+    shouldUseFlatConfig = {
+      dkf
+    }
     this._currency = currency instanceof Currency ? currency : null;
   }
 
